@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./background.jpg');
+    background-size: cover;
+}
+
+.calculator{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+}
+
+.calculator h1{
+    font-size: 35px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.input-box{
+    text-align: center;
+    margin: 20px 70px;
+}
+
+.input-box label{
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.input-box input{
+   width: 90%;
+   padding: 1rem;
+   margin: 1rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.input-box button{
+    width: calc(50% - 10px);
+    height: 40px;
+    margin: 5px;
+    background-color: #ffff76;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+button:hover{
+    background-color:black;
+    color: white;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .calculator h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        margin: 20px 30px;
+    }
+
+    .input-box input, .input-box button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    button {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 1rem;
+    }
+
+    .calculator h1 {
+        font-size: 24px;
+    }
+
+    .input-box label {
+        font-size: 14px;
+    }
+
+    .input-box input {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .input-box button{
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    button {
+        height: 45px;
+    }
+}
